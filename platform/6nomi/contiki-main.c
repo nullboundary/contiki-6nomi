@@ -149,7 +149,7 @@ main(void)
 
   PRINTF("\r\nStarting ");
   PRINTF(CONTIKI_VERSION_STRING);
-  PRINTF(" on MB851\r\n"); 
+  PRINTF(" on 6NoMi\r\n"); 
 
   /*
    * Initialize Contiki and our processes.
