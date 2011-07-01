@@ -193,10 +193,15 @@ extern BoardResourcesType const *boardDescription;
 #define GPIO_Px_OFFSET  (GPIO_PBCFGL_ADDR-GPIO_PACFGL_ADDR)
 
 
-/* leds definitions */
-#define LED_D1 PORTx_PIN(boardDescription->io->leds[0].gpioPort, boardDescription->io->leds[0].gpioPin)  //PORTB_PIN(6)
-#define LED_D3 PORTx_PIN(boardDescription->io->leds[1].gpioPort, boardDescription->io->leds[1].gpioPin) // PORTB_PIN(5)
+/* leds definitions */ //original in file for MB851
+//#define LED_D1 PORTx_PIN(boardDescription->io->leds[0].gpioPort, boardDescription->io->leds[0].gpioPin)  //PORTB_PIN(6)
+//#define LED_D3 PORTx_PIN(boardDescription->io->leds[1].gpioPort, boardDescription->io->leds[1].gpioPin) // PORTB_PIN(5)
 #define DUMMY_LED 0xff
+
+/* leds definitions  for 6NoMi*/ //TODO make some kind of if definte for the board defines
+#define LED_D1 PORTC_PIN(2)
+#define LED_D2 PORTC_PIN(3)
+#define LED_D3 PORTC_PIN(5)
 
 
 /** Description buttons definition */
